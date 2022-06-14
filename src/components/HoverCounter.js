@@ -1,7 +1,5 @@
-import withCounter from "./withCounter";
 
 const HoverCounter = (props) => {
-    
     const {count, incrementCount} = props;
 
     return (
@@ -12,4 +10,4 @@ const HoverCounter = (props) => {
 }
 
 
-export default withCounter(HoverCounter);
+export default HoverCounter;

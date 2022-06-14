@@ -1,9 +1,6 @@
-import withCounter from "./withCounter";
 
 const ClickCounter = (props) => {
-    
     const {count, incrementCount} = props;
-
     return (
         <div>
             <button type="button" onClick={incrementCount}>Clicked {count} times</button>
@@ -12,4 +9,4 @@ const ClickCounter = (props) => {
 }
 
 
-export default withCounter(ClickCounter);
+export default ClickCounter;
