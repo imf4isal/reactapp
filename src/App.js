@@ -1,14 +1,17 @@
 import ClickCounter from "./components/ClickCounter";
 import Counter from "./components/Counter";
-import HoverCounter from "./components/HoverCounter";
+import Section from "./components/Section";
+
 
 function App() {
   return (
     <div>
-      <Counter render = {(count, incrementCount) => (<ClickCounter count = {count} incrementCount = {incrementCount} />)} />
+      <Counter> 
+        {(count, incrementCount) => (<ClickCounter count = {count} incrementCount = {incrementCount} />)}
+      </Counter>
 
       {/* {(count, incrementCount) => (<ClickCounter count = {count} incrementCount = {incrementCount} />)}  */}
-      <Counter render = {(count, incrementCount) => (<HoverCounter count = {count} incrementCount = {incrementCount} />)} />
+      <Provider value={} > <Section /> </Provider>
     </div>
   );
 }
