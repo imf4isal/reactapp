@@ -27,3 +27,6 @@ function createContext(value = null) {
 }
 
 export default createContext;
+
+// Context.contextType(for class component) = ThemeContext
+//  for functional comp: useContext(values)
