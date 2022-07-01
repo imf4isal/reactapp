@@ -18,8 +18,6 @@ function Time(){
             <p>Time: {date.toLocaleTimeString()} </p>
             <button type="button" onClick={() => {clearInterval(buttonRef.current)}}> Clear Time </button>
         </div>
-
-        
     );
 }
 
