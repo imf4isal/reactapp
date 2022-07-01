@@ -1,11 +1,10 @@
-import Counter from "./components/useReducer/Counter";
+import Time from "./components/Time";
 
 function App() {
   return (
     <div>
-      <h2>UseReducer!</h2>
-
-      <Counter />
+      <h4>useRef</h4>
+      <Time />
     </div>
   );
 }
