@@ -1,12 +1,9 @@
-
-import Counter2 from "./components/useReducer/Counter2";
+import SimpleInput from './components/Form/SimpleInput';
 
 function App() {
   return (
-    <div>
-      <h2>UseReducer!</h2>
-
-      <Counter2 />
+    <div className="app">
+      <SimpleInput />
     </div>
   );
 }
