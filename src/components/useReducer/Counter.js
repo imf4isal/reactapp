@@ -1,28 +1,28 @@
 import { useReducer } from "react";
 
+const initialState = 0;
 
-const initialState = 5;
 const reducer = (state, action) => {
-    switch(action) {
-        case 'increment':
+    switch(action){
+        case "increment":
             return state + 1;
-        case 'decrement':
+        case "decrement":
             return state - 1;
         default:
             return state;
     }
 }
 
-
-export default function Counter() {
-
+function Counter(){
     const [count, dispatch] = useReducer(reducer, initialState);
-    
+
     return (
         <div>
-            <div> Counter  {count} </div>
-            <button type="button" onClick={() => dispatch('increment')}> Increment </button>
-            <button type="button" onClick={() => dispatch('decrement')}> Decrement </button>
+            <p>count: {count}</p>
+            <button type="button" onClick={() => dispatch("increment")}> increment </button>
+            <button type="button" onClick={() => dispatch("decrement")}> decrement </button>
         </div>
     );
 }
+
+export default Counter;
