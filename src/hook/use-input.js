@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const useInput = (validity) => {
-
     const [enteredValue, setEnteredValue] = useState('');
     const [enteredValueTouched, setEnteredValueTouched] = useState(false);
 
